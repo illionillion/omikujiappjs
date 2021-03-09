@@ -24,6 +24,14 @@ btn.onclick=function start(){
   // 　　//#twitter_buttonのhrefにパラメーターを渡す
   // 　　window.open().location.href = ("https://twitter.com/share?url=" + url + "&text=" + tw_contents + "&count=none&lang=ja");    
       
+  var Deme = "おみくじアプリ";
+  //ツイート内容をセット
+　var tw_contents = (Deme+" あなたは【" + out.innerHTML + "】です");
+　var url = location.href;
+
+  var url2="https://twitter.com/share?url=" + url + "&text=" + tw_contents + "&count=none&lang=ja";
+
+  share.innerHTML="<a herf='"+url+"'>"+"ツイート"+"</a>";
 }
 
 share.onclick=function share(){
@@ -36,6 +44,10 @@ share.onclick=function share(){
 　//#twitter_buttonのhrefにパラメーターを渡す
 　window.open().location.href = ("https://twitter.com/share?url=" + url + "&text=" + tw_contents + "&count=none&lang=ja"); 
   }
+
+  var url2="https://twitter.com/share?url=" + url + "&text=" + tw_contents + "&count=none&lang=ja";
+
+  share.innerHTML="<a herf='"+url+"'>"+"ツイート"+"</a>";
     
 
 }
