@@ -31,23 +31,23 @@ btn.onclick=function start(){
 
   var url2="https://twitter.com/share?url=" + url + "&text=" + tw_contents + "&count=none&lang=ja";
 
-  share.innerHTML="<a herf='"+url+"'>"+"ツイート"+"</a>";
+  share.innerHTML="<a herf='"+url2+"'>"+"ツイート"+"</a>";
 }
 
-share.onclick=function share(){
-  if(flag){
-  //出目取得する
-  var Deme = "おみくじアプリ";
-  //ツイート内容をセット
-　var tw_contents = (Deme+" あなたは【" + out.innerHTML + "】です");
-　var url = location.href;
-　//#twitter_buttonのhrefにパラメーターを渡す
-　window.open().location.href = ("https://twitter.com/share?url=" + url + "&text=" + tw_contents + "&count=none&lang=ja"); 
-  }
+// share.onclick=function share(){
+//   if(flag){
+//   //出目取得する
+//   var Deme = "おみくじアプリ";
+//   //ツイート内容をセット
+// 　var tw_contents = (Deme+" あなたは【" + out.innerHTML + "】です");
+// 　var url = location.href;
+// 　//#twitter_buttonのhrefにパラメーターを渡す
+// 　window.open().location.href = ("https://twitter.com/share?url=" + url + "&text=" + tw_contents + "&count=none&lang=ja"); 
+//   }
 
-  var url2="https://twitter.com/share?url=" + url + "&text=" + tw_contents + "&count=none&lang=ja";
+//   var url2="https://twitter.com/share?url=" + url + "&text=" + tw_contents + "&count=none&lang=ja";
 
-  share.innerHTML="<a herf='"+url+"'>"+"ツイート"+"</a>";
+//   share.innerHTML="<a herf='"+url2+"'>"+"ツイート"+"</a>";
     
 
-}
+// }
